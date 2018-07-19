@@ -26,6 +26,10 @@ $app = new Illuminate\Foundation\Application(
 |
 */
 
+
+$app->register(Collective\Html\HtmlServiceProvider::class);
+//$app->register(Yajra\DataTables\DataTablesServiceProvider::class);
+
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
     App\Http\Kernel::class
